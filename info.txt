@@ -1,0 +1,56 @@
+Redux 
+State Management library for js apps 
+Redux is built for larger more complex applicaitons 
+ Redex Toolkit is the official recommendation for writing Redux code 
+
+In short:
+
+Use Redux for managing global state in big/complex apps.
+
+Use Redux Toolkit because it’s the modern and recommended approach to Redux.
+-----------------------------------------------------------------------------------------------------------------
+
+Understanding Terms
+1. Store
+
+Hinglish: Ek centralized jagah (container) jahan poore application ka state (data) store hota hai.
+Example: Jaise ek almari jismein saare kapde (data) rakhe ho.
+
+English: A centralized place (container) where the entire application’s state (data) is stored.
+Example: Like a cupboard where all clothes (data) are kept.
+
+2. Reducers
+
+Hinglish: Ye functions hote hain jo current state aur action ko lete hain aur ek new state return karte hain.
+Formula: (state, action) => newState
+Example: Agar state = 2 aur action = "increment", to reducer naya state = 3 bana dega.
+
+English: These are functions that take the current state and an action, and return a new state.
+Formula: (state, action) => newState
+Example: If state = 2 and action = "increment", reducer will return new state = 3.
+
+3. Action
+
+Hinglish: Ek simple JavaScript object jisme type hota hai (jaise event ka naam).
+Example: { type: "ADD_TODO", payload: "Padhai karo" }
+
+English: A plain JavaScript object that has a type field (like the name of an event).
+Example: { type: "ADD_TODO", payload: "Study" }
+
+4. Slice
+
+Hinglish: Redux Toolkit ka concept hai. Ye ek single file hoti hai jisme reducer logic aur related actions ek saath rakhe jaate hain.
+Example: "userSlice.js" jisme user ka state aur actions ek saath honge.
+
+English: A concept in Redux Toolkit. It is a single file that contains reducer logic and related actions together.
+Example: "userSlice.js" where user state and actions are stored together.
+
+👉 Super Simple Summary:
+
+Store = Data ka godown / A warehouse for data
+
+Reducers = Data badalne ka tareeka / A way to change data
+
+Action = Order ya request / An order or request
+
+Slice = Package jisme actions + reducers dono hain / A package containing both actions & reducers
